@@ -32,12 +32,9 @@ ul.topnav li a:hover {background-color: #111;}
 
 .PIZZA {
   cursor: pointer;
-  color: #0088cc;
-}
+  color: black;}
 
-.PIZZA:hover {
-  text-decoration: underline;
-}  
+
 ul#Order{
   background-color:white;
 }

@@ -1,12 +1,13 @@
 // Business Logic
-function Order(size,crust,toppings,number){
+function Order(size,crust,toppings,number,delivery){
 this.pizzaSize=size;
 this.pizzaCrust=crust;
 this.pizzatoppings=toppings;
 this.pizzaNumber=number;
+this.pizzaDelivery=delivery
 }
 Order.prototype.fullInfo=function(){
-    return this.pizzaSize + "," + this.pizzaCrust + "," + this.pizzatoppings + "," + this.pizzaNumber;
+    return this.pizzaSize + "," + this.pizzaCrust + "," + this.pizzatoppings + "," + this.pizzaNumber + "," + this.pizzaDelivery;
 }
 
 // user interface Logic
@@ -82,14 +83,22 @@ else if($('#pizza-topping8:checked').val()){
  
  var inputtedPizzaNumber=$('select#one').val();
  console.log(inputtedPizzaNumber);
-
- 
- var newOrder=new Order(inputtedPizzaSize,inputtedPizzaCrust,inputtedPizzaToppings,inputtedPizzaNumber);
- console.log(newOrder)
+ if($('#pizza-delivery1:checked').val()){
+    var inputtedPizzaDelivery=$('#pizza-delivery1').val();
+    console.log(inputtedPizzaDelivery)
+   }
+   else if($('#pizza-delivery2:checked').val()){
+    var inputtedPizzaDelivery=$('#pizza-delivery2').val();
+    console.log(inputtedPizzaDelivery)
+   }
+   else{
+       console.log('error')
+   }
+ var newOrder=new Order(inputtedPizzaSize,inputtedPizzaCrust,inputtedPizzaToppings,inputtedPizzaNumber,inputtedPizzaDelivery);
  $('ul#Order').append("<li><span>" + newOrder.fullInfo() + "</span></li>");
- console.log('ul#Order').append("<li><span>" + newOrder.fullInfo() + "</span></li>")
  $(".PIZZA").last().click(function() {
     $("#show-pizza").show();
+    console.log('error')
     $("#show-contact h2").text(newOrder.pizzaSize);
     $(".pizza-size").text(newOrder.pizzaSize);
     $(".pizza-crust").text(newOrder.pizzaCrust);
@@ -97,9 +106,11 @@ else if($('#pizza-topping8:checked').val()){
     $(".pizza-number").text(newOrder.pizzaNumber);
   }); 
 });
-$("input#pizza-size").val("");
-$("input#pizza-crust").val("");
-$("input#pizza-topping").val("");
-$("select .form-control form-control-sm").val("");
+$('#pizzaSize').val();
+console.log()
+$('#pizza-crust').val();
+console.log()
+$('pizza-topping').val();
+$('select#one').val("");
 
 });

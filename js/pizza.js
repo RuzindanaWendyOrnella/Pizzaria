@@ -95,16 +95,15 @@ else if($('#pizza-topping8:checked').val()){
        console.log('error')
    }
  var newOrder=new Order(inputtedPizzaSize,inputtedPizzaCrust,inputtedPizzaToppings,inputtedPizzaNumber,inputtedPizzaDelivery);
- $('ul#Order').append("<li><span>" + newOrder.fullInfo() + "</span></li>");
- $(".PIZZA").last().click(function() {
+//  $('ul#Order').append("<li><span>" + newOrder.fullInfo() + "</span></li>");
+ 
     $("#show-pizza").show();
-    console.log('error')
     $("#show-contact h2").text(newOrder.pizzaSize);
     $(".pizza-size").text(newOrder.pizzaSize);
     $(".pizza-crust").text(newOrder.pizzaCrust);
     $(".pizza-topping").text(newOrder.pizzatoppings);
     $(".pizza-number").text(newOrder.pizzaNumber);
-  }); 
+  
 });
 $('#pizzaSize').val();
 console.log()

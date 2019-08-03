@@ -11,8 +11,10 @@
     <script src="js/pizza.js"></script>
 </head>
 <body>
+   
   
     <div class="pizza">
+     
     <h1>Yummy Pizza</h1>
     <ul class="topnav">
             <li><a href="#pizzasizes">Pizza sizes</a></li>
@@ -20,22 +22,39 @@
             <li><a href="#ordernow">Order Now</a></li>
             <li ><a href="#menu">Menu</a></li>
           </ul>
+          <!-- <h2>Pizza Number</h2> 
+          <p>choose the number of pizza you want</p>  
+          <select style="width:20%" class="form-control form-control-sm" id="one" required>
+                  <option>Small select</option>
+                  <option >1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select> -->
+   <div class="for">    
  <h2>Pizza Sizes</h2>
  <p>Choose the size of the pizza you want</p>
- <form class="pizza-size">
- <div class="form-check form-check-inline">
-        <input class="form-check-input new-small" type="radio" name="inlineRadioOptions" id="pizza-size1" value="Small">
-        <label class="form-check-label new-small" for="new-small">Small</label>
-      </div>   
-      <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-size2" value="Medium">
-            <label class="form-check-label" for="inlineRadio1">Medium</label>
-          </div>
-          <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-size3" value="Large">
-                <label class="form-check-label" for="inlineRadio1">Large</label>
-              </div>
-            </form>
+ <form>  
+  <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-size1" value="Small">
+          <label class="form-check-label" for="inlineRadio1">Small</label>
+        </div>
+        <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-size2" value="Medium">
+              <label class="form-check-label" for="inlineRadio1">Medium</label>
+            </div>
+            <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-size3" value="Large">
+                  <label class="form-check-label" for="inlineRadio1">Large</label>
+                </div>
+                </form>
                      
 <h2>Pizza Crust</h2>
 <p>Choose the king of crust you want on your pizza</p>
@@ -55,57 +74,42 @@
               </form>
 <h2>Pizza Toppings</h2>
 <p>choose the pizza tooping you prefer</p>
-<form>  
+<form id="pizza">  
 <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping1" value="Pepperoni">
+        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Pepperoni">
         <label class="form-check-label" for="inlineRadio1">Pepperoni</label>
       </div>    
       <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping2" value="Mushrooms">
+            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Mushrooms">
             <label class="form-check-label" for="inlineRadio1">Mushrooms</label>
           </div>  
           <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping3" value="Onions">
+                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Onions">
                 <label class="form-check-label" for="inlineRadio1">Onions</label>
               </div> 
               <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping4" value="Sausage">
+                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Sausage">
                     <label class="form-check-label" for="inlineRadio1">Sausage</label>
                   </div>   
                   <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping5" value="baucon">
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="baucon">
                         <label class="form-check-label" for="inlineRadio1">baucon</label>
                       </div>   
                       <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping6" value="Extra cheese">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Extra cheese">
                             <label class="form-check-label" for="inlineRadio1">Extra cheese</label>
                           </div> 
                           <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping7" value="Black olives">
+                                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Black olives">
                                 <label class="form-check-label" for="inlineRadio1">Black olives</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pizza-topping8" value="Green Peppers">
+                                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="pizza-topping" value="Green Peppers">
                                     <label class="form-check-label" for="inlineRadio1">Green Peppers</label>
                                   </div>
- <form>                  </form>
-<h2>Pizza Number</h2> 
-<p>choose the number of pizza you want</p>  
-<select style="width:20%" class="form-control form-control-sm" id="one" required>
-        <option>Small select</option>
-        <option >1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-      </select>
-      <h2>Pizza Delivery</h2>
+ <form> 
+</form>
+<h2>Pizza Delivery</h2>
       <p>Choose whether you want your pizza to be delivered to you or not</p>
       <form>
         <div class="form-check form-check-inline">
@@ -117,13 +121,20 @@
           <label class="form-check-label" for="inlineRadio1">No</label>
         </div>
       </form>
+</div>  
 
-<button style="background:red;margin-top:3%" type="submit">ORDER NOW</button>
+     
+      
+      
+
+<button id='Order' style="background:red;margin-top:3%" type="submit">ORDER NOW</button>
+
 </form>               
 </div>
 <ul id="Order">
   <li></li>
 </ul>
+<p id="total">total price</p>
 <div class="PIZZA">
 <div id="show-pizza">
     <h2>You ordered:</h2>
@@ -131,7 +142,7 @@
     <p>pizza-size: <span class="pizza-size"></span></p>
     <p>pizza-crust: <span class="pizza-crust"></span></p>
     <p>pizza-topping: <span class="pizza-topping"></span></p>
-    <p>pizza-number: <span class="pizza-number"></span></p>
+    <p>pizza-delivery: <span class="pizza-delivery"></span></p>
       </div>
   </div>
 </html>

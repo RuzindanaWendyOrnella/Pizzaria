@@ -1,7 +1,7 @@
-/* body{
+body{
     background: black;
     color: white
-} */
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -30,14 +30,28 @@ ul.topnav li a:hover {background-color: #111;}
 #show-pizza {
   display: none;
 }
-
+.for{
+  text-align: center;
+  color: red;
+  
+  
+}
 .PIZZA {
   cursor: pointer;
-  color: black;}
-
+  color: white;}
+/* .pizza{
+  background: url('https://media.boingboing.net/wp-content/uploads/2018/07/Boston-Pizza-table-and-chairs.png');
+  
+  background-repeat:no-repeat; 
+  margin-left:10%; 
+  margin-top:10%;
+  margin-right:10%;
+  width:100%;
+} */
 
 ul#Order{
-  background-color:white;
+  /* background-color:white; */
+  color:white;
 }
 /* .for{
   display: none;
@@ -45,3 +59,41 @@ ul#Order{
 /* #total{
   display: none;
 } */
+/* carousel { z-index: -99; } keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background: url(assets/img/slide3blur.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(assets/img/slide2blur.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(assets/img/slide1blur.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.card {
+  /* margin-left: (css-spacer * .25) !important; */
+  margin-left: 20%;
+  
+  background: rgb(191, 230, 173);
+ 
+  
+}
+ol{
+  display: none;
+ background:rgb(66,13,9);
+}

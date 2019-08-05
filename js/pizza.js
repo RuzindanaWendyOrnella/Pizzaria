@@ -174,9 +174,9 @@ toppings(myToppings);
  if($('#pizza-delivery1:checked').val()){
      var price4='1200Rwf'
     var inputtedPizzaDelivery=$('#pizza-delivery1').val()+ "  " + " price=1200Rwf";
-    prompt('please enter your location for pizza delivery')
-    if(prompt()!==null){
-        alert('your pizza will be delivered to your place. and we thank you for time :)')
+    var place =prompt('please enter your location for pizza delivery')
+    if(place!==null){
+        alert('your pizza will be delivered to' +'  ' +  place + '.' + 'and we thank you for time :)')
     }
     else{
         alert('please input your location or your pizza delivery will be cancelled')
@@ -207,13 +207,6 @@ console.log(total)
 //     $('.for').show()
 //    }
   
-  
-     
-       
-    
- 
-
-
 
 //  else{
 //      console.log('error')

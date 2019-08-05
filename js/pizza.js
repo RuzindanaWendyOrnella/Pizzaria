@@ -227,9 +227,13 @@ console.log(total)
 //          console.log('error')
 //      }
 //  });
-
+if(newOrder!==null){
  $('ol#Order').append("<li><span>" + newOrder.fullInfo() + "</span></li>").show();
  $('ol#total').append("<li><span>"+ "total" + "=" + total + "</span></li>").show();
+}
+else{
+   $('ol')
+}
 
     // $("#show-pizza").show();
     // $("#show-contact h2").text(newOrder.pizzaSize);

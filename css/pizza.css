@@ -41,7 +41,7 @@ ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px ;
   text-decoration: none;
 }
 
@@ -53,10 +53,25 @@ ul li a:hover {background-color: gray;}
  
   ul li {float: none;}
 }
+/*  Extra small  */
+@media only screen and (max-width:600px){
+}
+ /* Small  */
+@media only screen and (min-width:600px){
+}
+ /* Medium  */
+@media only screen and (min-width:768px){
+}
+ /* Large  */
+@media only screen and (min-width:992px){
+}
+/*  Extra  */
+@media only screen and (min-width:1200px){
+}
 #show-pizza {
   display: none;
 }
-.for{
+#for{
   text-align: center;
   color: black;
   
@@ -122,4 +137,23 @@ ul#Order{
 ol{
   display: none;
  background:rgb(66,13,9);
+}
+h1{
+  font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+   
+}
+.one{
+  margin-bottom: 1%;
+}
+.two{
+  margin-bottom: 1%;
+}
+.three{
+  margin-bottom: 1%;
+}
+#text{
+  margin-bottom: 1%;
+}
+.contact{
+  text-align: center;
 }
